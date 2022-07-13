@@ -3,7 +3,7 @@
 ### Actividades
    1 Crear 4 Ramas.
    
-    - Rama main | Es la rama principal sera utilizada solo cuando se vaya a realizar un mergue de producciòn.
+    - Rama main | Es la rama principal será utilizada solo cuando se vaya a realizar un mergue de producciòn.
     
     - Rama estrutura y disñeo | Esta se utilizara para la implemetación de estructura y diseño.
     
@@ -28,7 +28,8 @@
  ### Comandos.
     git status |
     git branch nombre_rama |
-    git push origin nombre_rama |
+    git push origin nombre_rama | Sube cambios a la rama que se nombre
+    git pull | Descarga las actualizaciones del repo.
     
  
  
