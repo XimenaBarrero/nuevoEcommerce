@@ -3,7 +3,7 @@
     --fondo:#eaeaea;
     --logo: #000;
     --texto: #090909;
-    --precio-header: #f55;
+    --precio-header: rgb(212, 63, 63);
     --fondo-fuerte: #ccc;
     --tacho: #e00;
 }
@@ -41,7 +41,7 @@ body{
     gap: 1rem;
     color: var(--logo);
 }
-/* MENU */
+/* ========MENU========== */
 .nav-navegacion{
     position: absolute;
     width: 100%;
@@ -50,7 +50,7 @@ body{
     left: 0;
     z-index: 100;
     background-color: var(--fondo);
-    padding: 4rem 2rem;
+    padding: 4rem 1rem;
     transform: translateX(100%); 
 }
 .nav-navegacion ul{
@@ -61,16 +61,21 @@ body{
     text-decoration: none;
 }
 .nav-navegacion ul li{
-    margin-top: 2rem;
+    margin-top: 1rem;
     font-size: 1.8rem;
     color: var(--texto);
-    text-transform: uppercase;
 }
 .actual{
     color: var(--precio-header) !important;
-    font-weight: 500;
+    font-weight: 700;
 }
-.nav-navegacion>b,
+.productos{
+    font-weight: 700;
+}
+.barrita{
+    display: flex;
+    
+}
 .carrito b{
     position: absolute;
     top: 0;
@@ -111,17 +116,22 @@ body{
     text-align: center;
     cursor: pointer;
 }
-/* ENCABEZADO */
+/* ===========ENCABEZADO ===========*/
 .encabezado{
     display: flex;
     margin-top: 3rem;
     flex-direction: column-reverse;
+    font-size: 20px;
 }
 .encabezado-texto{
     width: 100%;
 }
 .encabezado-texto>*{
     margin-bottom: 1.5rem;
+}
+.encabezado-texto>p{
+    color: rgb(85, 85, 85);
+    font-size: 16px;
 }
 .encabezado-texto>span{
     color: var(--precio-header);
@@ -133,7 +143,7 @@ body{
     width: 90%;
     max-width: 400px;
     align-items: center;
-    margin-top: 1rem; /* no funciona el margin en el padding de arriba */
+    margin-top: 1rem; 
 }
 .buttons>*{
     border: none;
@@ -160,7 +170,7 @@ body{
 .encabezado-img img{
     width: 100%;
 }
-/* CARRITO */
+/*=========== CARRITO=============== */
 .carrito{
     position: absolute;
     width: 100%;
@@ -208,7 +218,7 @@ button{
     cursor: pointer;
     box-shadow: 5px 5px 5px var(--fondo);
 }
-/* CARRITO PRODUCTS*/
+/* ==========CARRITO PRODUCTS===========*/
 .carrito-products{
     display: flex;
     flex-direction: column;
@@ -250,7 +260,7 @@ button{
     gap: 1rem;
     align-items: center;
 }
-/* propiedades a los iconos */
+/* ==============propiedades a los iconos ===========*/
 .unidades .fa-solid{
     font-size: 1.3rem;
     cursor: pointer;
@@ -263,7 +273,7 @@ button{
 .texto-product .unidades p{
     color: var(--texto);
 }
-/* FILTRO */
+/* ===========FILTRO ===============*/
 .filtro{
     margin-top: 2.5rem;
     list-style: none;
@@ -278,16 +288,18 @@ button{
     cursor: pointer;
     width: 100%;
 }
+.filtro>li>p{
+    color:  rgb(85, 85, 85);
+}
 .filtro>li:hover{
     cursor: pointer;
-    color: var(--tacho);
+    color: var(--precio-header);
 }
-    /* a los que no seleccionamos */
-    /* puse otra clase (oculto) porque tuve conflictos en js */
+    
 .noSelected, .noSelected2, .oculto{
   display: none;
 }
-/* PRODUCTOS */
+/* ==========PRODUCTOS=========== */
 .productos{
     width: 90%;
     display: grid;
@@ -296,7 +308,6 @@ button{
     margin: auto;
     margin-top: 3rem;
 }
-
 .productos__img{
     text-align: center;
     background-color: var(--fondo-fuerte);
@@ -315,7 +326,6 @@ button{
     padding: 1rem;
     border-radius: 0 0 14px 14px;
 }
-
 .productos__info>div{
     display: flex;
     flex-direction: row;
@@ -343,7 +353,7 @@ button{
     font-size: 2.3rem;
     cursor: pointer;
 }
-/* FOOTER */
+/*======== FOOTER========== */
 footer{
     margin-top: 6rem;
     background-color: var(--fondo-fuerte);
@@ -372,6 +382,12 @@ footer{
 .footer-info .social-redes{
     display: flex;
     gap: 1.5rem;
+}
+.information>p{
+    color:  rgb(85, 85, 85);
+}
+.color>li{
+    color:  rgb(85, 85, 85);
 }
 .social-redes i {
     color:#000;
@@ -443,6 +459,7 @@ footer>p{
         gap: 1rem;
     }
 }
+
 @media screen and (min-width:1000px){
     body{
         max-width: 1000px;
