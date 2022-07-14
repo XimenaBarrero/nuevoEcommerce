@@ -3,7 +3,7 @@
     --fondo:#eaeaea;
     --logo: #000;
     --texto: #090909;
-    --precio-header: rgb(212, 63, 63);
+    --precio-header: rgb(221, 62, 62);
     --fondo-fuerte: rgb(222, 221, 221);
     --tacho: #e00;
 }
@@ -169,7 +169,7 @@ body{
 }
 .encabezado-img img{
     width: 100%;
-    background-color: #e00;
+    background-color: var(--precio-header);
 }
 /*=========== CARRITO=============== */
 .carrito{
