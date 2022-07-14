@@ -296,6 +296,11 @@ button{
     margin: auto;
     margin-top: 3rem;
 }
+
+.productos-container {
+    min-width: 500px, 600px;
+}
+
 .productos__img{
     text-align: center;
     background-color: var(--fondo-fuerte);
