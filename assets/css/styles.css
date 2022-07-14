@@ -169,6 +169,7 @@ body{
 }
 .encabezado-img img{
     width: 100%;
+    background-color: #e00;
 }
 /*=========== CARRITO=============== */
 .carrito{
