@@ -291,14 +291,10 @@ button{
 .productos{
     width: 90%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px,1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
     gap: 2rem;
     margin: auto;
     margin-top: 3rem;
-}
-
-.productos-container {
-    min-width: 500px, 600px;
 }
 
 .productos__img{
@@ -310,21 +306,34 @@ button{
     width: 100%;
 }
 .productos__info{
-    display: flex;
+    /* display: flex; */
     align-items: center;
     position: relative;
-    justify-content: space-between;
+    justify-content: space-around;
     font-size: 1rem;
     background-color: var(--fondo);
     padding: 1rem;
     border-radius: 0 0 14px 14px;
 }
+
+.productos__info>div{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    margin-top: 10px;
+}
+
 .productos__info>div>p{
     font-size: 1.5rem;
     font-weight: bold;
+    width: 100%;
+    display: flex;
 }
 .productos__info>div>h4{
     font-weight: normal;
+    width: 50%;
+    padding-left: 15px;
 }
 .productos__info>i{
     position: absolute;
