@@ -4,7 +4,7 @@
     --logo: #000;
     --texto: #090909;
     --precio-header: rgb(212, 63, 63);
-    --fondo-fuerte: #ccc;
+    --fondo-fuerte: rgb(222, 221, 221);
     --tacho: #e00;
 }
 *{
@@ -396,7 +396,8 @@ footer{
 footer>p{
     text-align: center;
     padding: 2rem 0 1rem;
-    
+    color: rgb(120, 120, 120);
+    font-size: 13px;    
 }
 /* 600px */
 @media screen and (min-width:600px){
